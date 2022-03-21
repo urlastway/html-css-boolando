@@ -1,0 +1,121 @@
+/*----------------
+
+BODY RULES
+
+*/
+body {
+    color: #000;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+    padding: 30px;
+}
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*----------------
+
+F. BODY RULES
+
+*/
+
+/*MAIN*/
+.col {
+    margin-bottom: 30px;
+}
+
+.collage__products{
+    float: left;
+    width: calc(100% / 3 - 20px);
+    margin: 0 10px;;
+}
+.product{
+    position: relative;
+}
+.product img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+.product .product__img2{
+    display: none;
+}
+.product:hover .product__img1{
+    display: none;
+}
+
+.product:hover .product__img2{
+    display: block;
+}
+
+.discount, .sustainable, .sustainable1{
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    color: #fff;
+    text-transform: bold;
+    padding: 3px;
+}
+
+.discount{
+    background-color: #eb0037;
+    margin-right: 10px;
+}
+
+.sustainable{
+    background-color: #00875a;
+    left: 50px;
+}
+
+.heart{
+    padding: 10px 15px;
+    background-color: #fff;
+    color:#000;
+    right: 0;
+    position: absolute;
+    top: 30px;
+}
+.brend{
+    font-size: 16px;
+    margin-top: 8px;
+}
+.description{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+}
+.discounted__price{
+    color:#eb0037;
+    font-size: 15px;
+    font-weight: bold;
+}
+.price{
+    text-decoration: line-through;
+    font-weight: 400;
+    color:#000;
+    margin-left: 5px;
+}
+.sustainable1{
+    background-color: #00875a;
+    left: 0px;
+}
